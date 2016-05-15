@@ -1,4 +1,4 @@
-Chinese translated version of Documentation/email-clients.txt
+Chinese translated version of Documentation/00-INDEX
 
 If you have any comment or update to the content, please contact the
 original document maintainer directly.  However, if you have a problem
@@ -6,7 +6,7 @@ communicating in English you can also ask the Chinese maintainer for
 help.  Contact the Chinese maintainer if this translation is outdated
 or if there is a problem with the translation.
 
-Chinese maintainer: Wang Wei <w079064@163.com>
+Chinese maintainer: jgxing.hz <jgxing.hz@gmail.com>
 ---------------------------------------------------------------------
 Documentation/00-INDEX 的中文翻译
 
@@ -14,504 +14,736 @@ Documentation/00-INDEX 的中文翻译
 交流有困难的话，也可以向中文版维护者求助。如果本翻译更新不及时或者翻
 译存在问题，请联系中文版维护者。
 
-中文版维护者： 王威    Wang Wei <w079064@163.com>
-中文版翻译者： 王威    Wang Wei <w079064@163.com>
-中文版校译者：
+中文版维护者： 邢建国  jgxing.hz <jgxing.hz@gmail.com>
+中文版翻译者： 邢建国  jgxing.hz <jgxing.hz@gmail.com>
+中文版校译者： 邢建国  jgxing.hz <jgxing.hz@gmail.com>
+
+
 
 以下为正文
 ---------------------------------------------------------------------
 
-这是一份包含在目录./linux/Documentation和其子目录下的所有文件的清单。如
-果你在目录Documentation里添加一个文件，请同时在此文档中按照字母大小列出
-。或者冒着想得了狂犬病的狗一样被猎杀的风险。请保证描述只占一行。
-                                        谢谢    -- Paul G.
+本文是目录./linux/Documentation下所有文件的列表及介绍。如要增加一个文档，
+请按字母次序加入列表，否则有像疯狗被追杀的风险。请尽量保持介绍短小，能放
+在一行以内。
+                             谢谢 -- Paul G.
 
-下列翻译在网上可用：
-    - 日文， 由JF工程(jf@listserv.linux.or.jp) 维护,网络地址@
+
+This is a brief list of all the files in ./linux/Documentation and what
+they contain. If you add a documentation file, please list it here in
+alphabetical order as well, or risk being hunted down like a rabid dog.
+Please keep the descriptions small enough to fit on one line.
+Thanks -- Paul G.
+
+
+在WWW上还有以下翻译版本：
+
+
+Following translations are available on the WWW:
+
+
+   - 日文，由JF项目(jf@listserv.linux.or.jp)维护，地址：http://linuxjf.sourceforge.jp/
+
+
+   - Japanese, maintained by the JF Project (jf@listserv.linux.or.jp), at
      http://linuxjf.sourceforge.jp/
 
+
 00-INDEX
-    - 本文档
+- 本文件.
 ABI/
-    - 内核信息 <-> 用户空间 ABI 和 相关稳定的接口
+- 内核 <-> 用户空间 ABI及相对接口稳定性等信息. 
+- info on kernel <-> userspace ABI and relative interface stability.
+
 
 BUG-HUNTING
-    - 为了发现BUG在补丁中进行暴力破解的二进制搜索
+- 用二分搜索暴力方法查找bug.
+- brute force method of doing binary search of patches to find bug.
 Changes
-    - 列出变更：所需软件包的最低版本
-	- list of changes that break older software packages.
+- 更改老版本软件包的记录列表.
+- list of changes that break older software packages.
 CodingStyle
-    - 维护人员所期望的C代码在内核中应如何察看
-	- how the maintainers expect the C code in the kernel to look.
+- 维护人员期望内核中C代码的风格.
+- how the maintainers expect the C code in the kernel to look.
 DMA-API.txt
-    - DMA API(应用程序接口), pci_ API 和 非一致存储器的扩展
-	- DMA API, pci_ API & extensions for nhh-consistent memory machines.
+- 非一致内存机器的DMA API,pci_ API & extensions 
+- DMA API, pci_ API & extensions for non-consistent memory machines.
 DMA-API-HOWTO.txt
-    - 动态 DMA 映射指导
-	- Dynamic DMA mapping Guide
+- 动态DMA映射指导
+- Dynamic DMA mapping Guide
 DMA-ISA-LPC.txt
-    - 如何管理ISA(和LPC)设备的DMA
-	- How to do DMA with ISA (and LPC) devices.
+- 如何与ISA（和LPC）设备进行DMA操作.
+- How to do DMA with ISA (and LPC) devices.
 DMA-attributes.txt
-    - 列出一个DMA区域可能存在不同可能的特性
-	- listing of the various possible attributes a DMA region can have
+- DMA区的所有可能属性列表.
+- listing of the various possible attributes a DMA region can have
 DocBook/
-    - 目录：为内核文件存储DocBook等模版
-	- directory with DocBook templates etc. for kernel documentation.
+- 用于内核文档的DocBook模板目录
+- directory with DocBook templates etc. for kernel documentation.
 EDID/
-    - 目录：保存为不同的gfx/显示
-	- directory with info on customizing EDID for broken gfx/displays.
+- 定制EDID的目录
+- directory with info on customizing EDID for broken gfx/displays.
 HOWTO
-	- the process and procedures of how to do Linux kernel development.
+- Linux内核开发的流程及步骤.
+- the process and procedures of how to do Linux kernel development.
 IPMI.txt
-	- info on Linux Intelligent Platform Management Interface (IPMI) Driver.
+- Linux智能平台管理接口(IPMI)驱动.
+- info on Linux Intelligent Platform Management Interface (IPMI) Driver.
 IRQ-affinity.txt
-	- how to select which CPU(s) handle which interrupt events on SMP.
+- 如何选择哪个或哪些CPU处理SMP上的中断事件.
+- how to select which CPU(s) handle which interrupt events on SMP.
 IRQ-domain.txt
-	- info on interrupt numbering and setting up IRQ domains.
+- 中断编号及设置IRQ域.
+- info on inerrupt numbering and setting up IRQ domains.
 IRQ.txt
-	- description of what an IRQ is.
+- 描述什么是IRQ.
+- description of what an IRQ is.
 Intel-IOMMU.txt
-	- basic info on the Intel IOMMU virtualization support.
+- 关于Intel IOMMU虚拟化支持的基本信息.
+- basic info on the Intel IOMMU virtualization support.
 Makefile
-	- some files in Documentation dir are actually sample code to build
+- some files in Documentation dir are actually sample code to build
 ManagementStyle
-	- how to (attempt to) manage kernel hackers.
+- 如何管理内核hacker.
+- how to (attempt to) manage kernel hackers.
 RCU/
-	- directory with info on RCU (read-copy update).
+- 目录：RCU(read-copy update)信息.
+- directory with info on RCU (read-copy update).
 SAK.txt
-	- info on Secure Attention Keys.
+- 关于安全注意键(Secure Attention Keys)信息.
+- info on Secure Attention Keys.
 SM501.txt
-	- Silicon Motion SM501 multimedia companion chip
+- Silicon Motion SM501多媒体公司芯片
+- Silicon Motion SM501 multimedia companion chip
 SecurityBugs
-	- procedure for reporting security bugs found in the kernel.
+- 报告内核中发现的安全bug的流程.
+- procedure for reporting security bugs found in the kernel.
 SubmitChecklist
-	- Linux kernel patch submission checklist.
+- Linux内核补丁提交清单.
+- Linux kernel patch submission checklist.
 SubmittingDrivers
-	- procedure to get a new driver source included into the kernel tree.
+- 新驱动程序源码加入kernel树的流程.
+- procedure to get a new driver source included into the kernel tree.
 SubmittingPatches
-	- procedure to get a source patch included into the kernel tree.
+- 源码补丁加入kernel树的流程.
+- procedure to get a source patch included into the kernel tree.
 VGA-softcursor.txt
-	- how to change your VGA cursor from a blinking underscore.
+- 如何修改带下划线闪烁的VGA光标.
+- how to change your VGA cursor from a blinking underscore.
 accounting/
-	- documentation on accounting and taskstats.
+- 统计及任务状态文档
+- documentation on accounting and taskstats.
 acpi/
-	- info on ACPI-specific hooks in the kernel.
+- 内核中ACPI相关的接口.
+- info on ACPI-specific hooks in the kernel.
 aoe/
-	- description of AoE (ATA over Ethernet) along with config examples.
+- AoE (ATA over Ethernet)描述及配置示例. 
+- description of AoE (ATA over Ethernet) along with config examples.
 applying-patches.txt
-	- description of various trees and how to apply their patches.
+- 描述不同内核树及打补丁.
+- description of various trees and how to apply their patches.
 arm/
-	- directory with info about Linux on the ARM architecture.
+- ARM体系下的Linux有关信息目录.
+- directory with info about Linux on the ARM architecture.
 arm64/
-	- directory with info about Linux on the 64 bit ARM architecture.
-assoc_array.txt
-	- generic associative array intro.
+- 64位ARM体系下的Linux有关信息目录.
+- directory with info about Linux on the 64 bit ARM architecture.
 atomic_ops.txt
-	- semantics and behavior of atomic and bitmask operations.
+- 原子及位掩码操作的语意及行为.
+- semantics and behavior of atomic and bitmask operations.
 auxdisplay/
-	- misc. LCD driver documentation (cfag12864b, ks0108).
+- misc. LCD driver documentation (cfag12864b, ks0108).
 backlight/
-	- directory with info on controlling backlights in flat panel displays
+- 目录：控制平板显示器背光信息
+- directory with info on controlling backlights in flat panel displays
 bad_memory.txt
-	- how to use kernel parameters to exclude bad RAM regions.
+- 如何使用kernel参数去除损坏的RAM区.
+- how to use kernel parameters to exclude bad RAM regions.
 basic_profiling.txt
-	- basic instructions for those who wants to profile Linux kernel.
-bcache.txt
-	- Block-layer cache on fast SSDs to improve slow (raid) I/O performance.
+- 测量Linux内核性能的基本用法.
+- basic instructions for those who wants to profile Linux kernel.
 binfmt_misc.txt
-	- info on the kernel support for extra binary formats.
+- 内核支持的其他二进制格式信息.
+- info on the kernel support for extra binary formats.
 blackfin/
-	- directory with documentation for the Blackfin arch.
+- 目录：Blackfin体系文档.
+- directory with documentation for the Blackfin arch.
 block/
-	- info on the Block I/O (BIO) layer.
+- 块 I/O (BIO) 层信息.
+- info on the Block I/O (BIO) layer.
 blockdev/
-	- info on block devices & drivers
+- 块设备及驱动程序
+- info on block devices & drivers
 braille-console.txt
-	- info on how to use serial devices for Braille support.
+- 如何使用串口设备支持Braille.
+- info on how to use serial devices for Braille support.
 bt8xxgpio.txt
-	- info on how to modify a bt8xx video card for GPIO usage.
+- 如何修改bt8xx显卡用于GPIO.
+- info on how to modify a bt8xx video card for GPIO usage.
 btmrvl.txt
-	- info on Marvell Bluetooth driver usage.
+- Marvell蓝牙驱动程序用法.
+- info on Marvell Bluetooth driver usage.
 bus-devices/
-	- directory with info on TI GPMC (General Purpose Memory Controller)
+- TI GPMC (General Purpose Memory Controller)相关信息.
+- directory with info on TI GPMC (General Purpose Memory Controller)
 bus-virt-phys-mapping.txt
-	- how to access I/O mapped memory from within device drivers.
+- 如何在设备驱动中访问I/O映射的内存.
+- how to access I/O mapped memory from within device drivers.
 cachetlb.txt
-	- describes the cache/TLB flushing interfaces Linux uses.
+- Linux使用的刷新cache/TLB接口描述.
+- describes the cache/TLB flushing interfaces Linux uses.
 cdrom/
-	- directory with information on the CD-ROM drivers that Linux has.
+- Linux CD-ROM驱动有关信息.
+- directory with information on the CD-ROM drivers that Linux has.
 cgroups/
-	- cgroups features, including cpusets and memory controller.
+- cgroups特性，包括cpusets及内存控制器.
+- cgroups features, including cpusets and memory controller.
 circular-buffers.txt
-	- how to make use of the existing circular buffer infrastructure
+- 如何使用已有的环形缓冲区基础设施.
+- how to make use of the existing circular buffer infrastructure
 clk.txt
-	- info on the common clock framework
+- 公共时钟框架.
+- info on the common clock framework
 coccinelle.txt
-	- info on how to get and use the Coccinelle code checking tool.
+- 如何获得和使用Coccinelle代码检查工具.
+- info on how to get and use the Coccinelle code checking tool.
 connector/
-	- docs on the netlink based userspace<->kernel space communication mod.
+- 基于netlink的用户<->内核空间通信模式.
+- docs on the netlink based userspace<->kernel space communication mod.
 console/
-	- documentation on Linux console drivers.
+- Linux控制台驱动.
+- documentation on Linux console drivers.
 cpu-freq/
-	- info on CPU frequency and voltage scaling.
+- CPU主频和电压调整.
+- info on CPU frequency and voltage scaling.
 cpu-hotplug.txt
-	- document describing CPU hotplug support in the Linux kernel.
+- Linux内核中CPU热插拔支持.
+- document describing CPU hotplug support in the Linux kernel.
 cpu-load.txt
-	- document describing how CPU load statistics are collected.
+- 描述如何统计及收集CPU负载.
+- document describing how CPU load statistics are collected.
 cpuidle/
-	- info on CPU_IDLE, CPU idle state management subsystem.
+- CPU_IDLE， CPU空闲状态管理子系统.
+- info on CPU_IDLE, CPU idle state management subsystem.
 cputopology.txt
-	- documentation on how CPU topology info is exported via sysfs.
+- 如何通过sysfs输出CPU拓扑信息.
+- documentation on how CPU topology info is exported via sysfs.
 crc32.txt
-	- brief tutorial on CRC computation
+- CRC计算简单教程.
+- brief tutorial on CRC computation
 cris/
-	- directory with info about Linux on CRIS architecture.
+- CRIS体系下的Linux.
+- directory with info about Linux on CRIS architecture.
 crypto/
-	- directory with info on the Crypto API.
+- 加密API.
+- directory with info on the Crypto API.
 dcdbas.txt
-	- information on the Dell Systems Management Base Driver.
+- Dell系统管理基本驱动.
+- information on the Dell Systems Management Base Driver.
 debugging-modules.txt
-	- some notes on debugging modules after Linux 2.6.3.
+- Linux 2.6.3以后的调试模块几点注释.
+- some notes on debugging modules after Linux 2.6.3.
 debugging-via-ohci1394.txt
-	- how to use firewire like a hardware debugger memory reader.
+- 如何像使用一个硬件调试的内存Reader那样使用firewire.
+- how to use firewire like a hardware debugger memory reader.
 dell_rbu.txt
-	- document demonstrating the use of the Dell Remote BIOS Update driver.
+- 如何使用Dell远程BIOS升级驱动程序的示例.
+- document demonstrating the use of the Dell Remote BIOS Update driver.
 development-process/
-	- how to work with the mainline kernel development process.
+- 如何和主内核开发过程工作.
+- how to work with the mainline kernel development process.
 device-mapper/
-	- directory with info on Device Mapper.
+- Device Mapper信息.
+- directory with info on Device Mapper.
 devices.txt
-	- plain ASCII listing of all the nodes in /dev/ with major minor #'s.
+- /dev目录中所有设备节点ASCII格式的清单（含主从设备号）.
+- plain ASCII listing of all the nodes in /dev/ with major minor #'s.
 devicetree/
-	- directory with info on device tree files used by OF/PowerPC/ARM
+- OF/PowerPC/ARM使用的设备树文件.
+- directory with info on device tree files used by OF/PowerPC/ARM
 digsig.txt
-	-info on the Digital Signature Verification API
+- 数字签名校验API
+-info on the Digital Signature Verification API
 dma-buf-sharing.txt
-	- the DMA Buffer Sharing API Guide
+- DMA缓冲区共享API指南
+- the DMA Buffer Sharing API Guide
+dmaengine.txt
+- DMA引擎API指南
+-the DMA Engine API Guide
 dontdiff
-	- file containing a list of files that should never be diff'ed.
+- 不能使用diff比较的文件列表
+- file containing a list of files that should never be diff'ed.
 driver-model/
-	- directory with info about Linux driver model.
+- Linux驱动模型.
+- directory with info about Linux driver model.
 dvb/
-	- info on Linux Digital Video Broadcast (DVB) subsystem.
+- Linux数字视频光标（DVB）子系统.
+- info on Linux Digital Video Broadcast (DVB) subsystem.
 dynamic-debug-howto.txt
-	- how to use the dynamic debug (dyndbg) feature.
+- 如何使用动态调试(dyndbg)特性.
+- how to use the dynamic debug (dyndbg) feature.
 early-userspace/
-	- info about initramfs, klibc, and userspace early during boot.
+- 早期引导阶段的initramfs, klibc和userspace的信息.
+- info about initramfs, klibc, and userspace early during boot.
 edac.txt
-	- information on EDAC - Error Detection And Correction
-efi-stub.txt
-	- How to use the EFI boot stub to bypass GRUB or elilo on EFI systems.
+- EDAC(Error Detection And Correction，错误检测和修正)信息
+- information on EDAC - Error Detection And Correction
 eisa.txt
-	- info on EISA bus support.
+- EISA总线支持.
+- info on EISA bus support.
 email-clients.txt
-	- info on how to use e-mail to send un-mangled (git) patches.
+- 如何使用e-mail发送un-mangled (git)补丁.
+- info on how to use e-mail to send un-mangled (git) patches.
 extcon/
-	- directory with porting guide for Android kernel switch driver.
+- 用于Android内核切换驱动的移植指南.
+- directory with porting guide for Android kernel switch driver.
 fault-injection/
-	- dir with docs about the fault injection capabilities infrastructure.
+- 故障注入基础设施
+- dir with docs about the fault injection capabilities infrastructure.
 fb/
-	- directory with info on the frame buffer graphics abstraction layer.
+- 帧缓冲图形抽象层
+- directory with info on the frame buffer graphics abstraction layer.
 filesystems/
-	- info on the vfs and the various filesystems that Linux supports.
+- vfs和Linux支持的各种文件系统.
+- info on the vfs and the various filesystems that Linux supports.
 firmware_class/
-	- request_firmware() hotplug interface info.
+- request_firmware()热插拔接口信息.
+- request_firmware() hotplug interface info.
 flexible-arrays.txt
-	- how to make use of flexible sized arrays in linux
+- 如何在Linux中使用大小可变的数组.
+- how to make use of flexible sized arrays in linux
 fmc/
-	- information about the FMC bus abstraction
+- FMC总线抽象信息
+- information about the FMC bus abstraction
 frv/
-	- Fujitsu FR-V Linux documentation.
+- 富士 FR-V Linux文档.
+- Fujitsu FR-V Linux documentation.
 futex-requeue-pi.txt
-	- info on requeueing of tasks from a non-PI futex to a PI futex
+- 从一个non-PI futex到PI futex的任务重新排队.
+- info on requeueing of tasks from a non-PI futex to a PI futex
 gcov.txt
-	- use of GCC's coverage testing tool "gcov" with the Linux kernel
-gpio/
-	- gpio related documentation
+- Linux内核中使用GCC覆盖测试工具"gcov"
+- use of GCC's coverage testing tool "gcov" with the Linux kernel
+gpio.txt
+- GPIO(General Purpose Input/Output)访问惯例.
+- overview of GPIO (General Purpose Input/Output) access conventions.
 hid/
-	- directory with information on human interface devices
+- 人机接口设备(HID)
+- directory with information on human interface devices
 highuid.txt
-	- notes on the change from 16 bit to 32 bit user/group IDs.
-hsi.txt
-	- HSI subsystem overview.
+- 16位到32位用户/组ID变化注释.
+- notes on the change from 16 bit to 32 bit user/group IDs.
 hwspinlock.txt
-	- hardware spinlock provides hardware assistance for synchronization
+- 用于硬件辅助同步的硬件自旋锁
+- hardware spinlock provides hardware assistance for synchronization
 timers/
-	- info on the timer related topics
+- 定时器相关主题
+- info on the timer related topics
 hw_random.txt
-	- info on Linux support for random number generator in i8xx chipsets.
+- i8xx芯片组中Linux对随机数产生器的支持.
+- info on Linux support for random number generator in i8xx chipsets.
 hwmon/
-	- directory with docs on various hardware monitoring drivers.
+- 各种硬件监控驱动.
+- directory with docs on various hardware monitoring drivers.
 i2c/
-	- directory with info about the I2C bus/protocol (2 wire, kHz speed).
+- I2C 总线/协议（2线，速度kHz)信息
+- directory with info about the I2C bus/protocol (2 wire, kHz speed).
 i2o/
-	- directory with info about the Linux I2O subsystem.
+- Linux I20子系统.
+- directory with info about the Linux I2O subsystem.
 x86/i386/
-	- directory with info about Linux on Intel 32 bit architecture.
+- Intel 32位体系结构上的Linux 
+- directory with info about Linux on Intel 32 bit architecture.
 ia64/
-	- directory with info about Linux on Intel 64 bit architecture.
+- Intel 64位体系结构上的Linux
+- directory with info about Linux on Intel 64 bit architecture.
 infiniband/
-	- directory with documents concerning Linux InfiniBand support.
+- Linux InfiniBand支持.
+- directory with documents concerning Linux InfiniBand support.
 init.txt
-	- what to do when the kernel can't find the 1st process to run.
+- 当内核不能加载第一个进程时应该如何做.
+- what to do when the kernel can't find the 1st process to run.
 initrd.txt
-	- how to use the RAM disk as an initial/temporary root filesystem.
+- 如何使用虚拟盘作为初始/临时的根文件系统.
+- how to use the RAM disk as an initial/temporary root filesystem.
 input/
-	- info on Linux input device support.
+- Linux输入设备支持.
+- info on Linux input device support.
 intel_txt.txt
-	- info on intel Trusted Execution Technology (intel TXT).
+- Intel可信执行技术(intel TXT).
+- info on intel Trusted Execution Technology (intel TXT).
 io-mapping.txt
-	- description of io_mapping functions in linux/io-mapping.h
+- linux/io-mapping.h中的io_mapping函数描述
+- description of io_mapping functions in linux/io-mapping.h
 io_ordering.txt
-	- info on ordering I/O writes to memory-mapped addresses.
+- 内存映射地址的I/O写排序.
+- info on ordering I/O writes to memory-mapped addresses.
 ioctl/
-	- directory with documents describing various IOCTL calls.
+- 各种IOCTL调用描述.
+- directory with documents describing various IOCTL calls.
 iostats.txt
-	- info on I/O statistics Linux kernel provides.
+- Linux内核提供的I/O统计.
+- info on I/O statistics Linux kernel provides.
 irqflags-tracing.txt
-	- how to use the irq-flags tracing feature.
+- 如何使用irq-flags跟踪特性.
+- how to use the irq-flags tracing feature.
 isapnp.txt
-	- info on Linux ISA Plug & Play support.
+- Linux ISA Plug & Play支持.
+- info on Linux ISA Plug & Play support.
 isdn/
-	- directory with info on the Linux ISDN support, and supported cards.
+- Linux ISDN支持及支持的卡.
+- directory with info on the Linux ISDN support, and supported cards.
 java.txt
-	- info on the in-kernel binary support for Java(tm).
+- 内核二进制Java(tm)支持.
+- info on the in-kernel binary support for Java(tm).
 ja_JP/
-	- directory with Japanese translations of various documents
+- 日文翻译文档
+- directory with Japanese translations of various documents
 kbuild/
-	- directory with info about the kernel build process.
+- 内核编译过程文档
+- directory with info about the kernel build process.
 kdump/
-	- directory with mini HowTo on getting the crash dump code to work.
+- 如何使崩溃的dump代码工作的mini HowTo
+- directory with mini HowTo on getting the crash dump code to work.
 kernel-doc-nano-HOWTO.txt
-	- mini HowTo on generation and location of kernel documentation files.
+- 如何生成和定位内核文档文件的mini HowTo
+- mini HowTo on generation and location of kernel documentation files.
 kernel-docs.txt
-	- listing of various WWW + books that document kernel internals.
+- 各种介绍内核内幕的WWW + 书清单. 
+- listing of various WWW + books that document kernel internals.
 kernel-parameters.txt
-	- summary listing of command line / boot prompt args for the kernel.
-kernel-per-CPU-kthreads.txt
-	- List of all per-CPU kthreads and how they introduce jitter.
+- 内核命令行和引导参数的汇总清单.
+- summary listing of command line / boot prompt args for the kernel.
 kmemcheck.txt
-	- info on dynamic checker that detects uses of uninitialized memory.
+- 用来检测未初始化内存区域使用的动态检查器
+- info on dynamic checker that detects uses of uninitialized memory.
 kmemleak.txt
-	- info on how to make use of the kernel memory leak detection system
+- 如何使用内核内存泄露检查系统
+- info on how to make use of the kernel memory leak detection system
 ko_KR/
-	- directory with Korean translations of various documents
+- 韩文翻译文档
+- directory with Korean translations of various documents
 kobject.txt
-	- info of the kobject infrastructure of the Linux kernel.
+- Linux内核中kobject基础设施.
+- info of the kobject infrastructure of the Linux kernel.
 kprobes.txt
-	- documents the kernel probes debugging feature.
+- 内核probe调试特性.
+- documents the kernel probes debugging feature.
 kref.txt
-	- docs on adding reference counters (krefs) to kernel objects.
-kselftest.txt
-	- small unittests for (some) individual codepaths in the kernel.
+- 内核对象引用计数器(kref)
+- docs on adding reference counters (krefs) to kernel objects.
 laptops/
-	- directory with laptop related info and laptop driver documentation.
+- 笔记本相关信息和笔记本驱动文档.
+- directory with laptop related info and laptop driver documentation.
 ldm.txt
-	- a brief description of LDM (Windows Dynamic Disks).
+- LDM(Windows Dynamic Disks)简单描述.
+- a brief description of LDM (Windows Dynamic Disks).
 leds/
-	- directory with info about LED handling under Linux.
+- Linux下LED处理.
+- directory with info about LED handling under Linux.
 local_ops.txt
-	- semantics and behavior of local atomic operations.
-locking/
-	- directory with info about kernel locking primitives
+- 局部原子操作语义和行为.
+- semantics and behavior of local atomic operations.
+lockdep-design.txt
+- 运行时锁正确性验证器
+- documentation on the runtime locking correctness validator.
+lockstat.txt
+- 收集各种锁（和竞争）的统计信息.
+- info on collecting statistics on locks (and contention).
 lockup-watchdogs.txt
-	- info on soft and hard lockup detectors (aka nmi_watchdog).
+- 关于软和硬锁检查器(aka nmi_watchdog).
+- info on soft and hard lockup detectors (aka nmi_watchdog).
 logo.gif
-	- full colour GIF image of Linux logo (penguin - Tux).
+- Linux logo全彩色GIF图片(penguin - Tux).
+- full colour GIF image of Linux logo (penguin - Tux).
 logo.txt
-	- info on creator of above logo & site to get additional images from.
-lzo.txt
-	- kernel LZO decompressor input formats
+- 上述图标的创建者及提供更多图片的其他站点
+- info on creator of above logo & site to get additional images from.
 m68k/
-	- directory with info about Linux on Motorola 68k architecture.
+- Motorola 68k体系结构上的Linux
+- directory with info about Linux on Motorola 68k architecture.
 magic-number.txt
-	- list of magic numbers used to mark/protect kernel data structures.
-mailbox.txt
-	- How to write drivers for the common mailbox framework (IPC).
+- 用于标记和保护内核数据结构的幻数清单.
+- list of magic numbers used to mark/protect kernel data structures.
 md.txt
-	- info on boot arguments for the multiple devices driver.
+- 多设备驱动的引导参数.
+- info on boot arguments for the multiple devices driver.
 media-framework.txt
-	- info on media framework, its data structures, functions and usage.
+- 多媒体框架，数据结构，函数和用法.
+- info on media framework, its data structures, functions and usage.
 memory-barriers.txt
-	- info on Linux kernel memory barriers.
+- Linux内核内核栅栏
+- info on Linux kernel memory barriers.
 memory-devices/
-	- directory with info on parts like the Texas Instruments EMIF driver
+- 如TI EMIF等的驱动程序
+- directory with info on parts like the Texas Instruments EMIF driver
 memory-hotplug.txt
-	- Hotpluggable memory support, how to use and current status.
+- 热插拔内存支持，如何使用和目前状态.
+- Hotpluggable memory support, how to use and current status.
+memory.txt
+- 典型的Linux内存问题.
+- info on typical Linux memory problems.
 metag/
-	- directory with info about Linux on Meta architecture.
+- Meta体系上的Linux
+- directory with info about Linux on Meta architecture.
 mips/
-	- directory with info about Linux on MIPS architecture.
+- MIPS体系上的Linux
+- directory with info about Linux on MIPS architecture.
 misc-devices/
-	- directory with info about devices using the misc dev subsystem
+- 使用misc设备子系统的设备
+- directory with info about devices using the misc dev subsystem
 mmc/
-	- directory with info about the MMC subsystem
+- MMC子系统
+- directory with info about the MMC subsystem
 mn10300/
-	- directory with info about the mn10300 architecture port
-module-signing.txt
-	- Kernel module signing for increased security when loading modules.
+- mn10300体系上的Linux
+- directory with info about the mn10300 architecture port
 mtd/
-	- directory with info about memory technology devices (flash)
+- 内存技术设备(flash)
+- directory with info about memory technology devices (flash)
 mono.txt
-	- how to execute Mono-based .NET binaries with the help of BINFMT_MISC.
+- 如何利用BINFMT_MISC执行基于Mono的.NET二进制文件.
+- how to execute Mono-based .NET binaries with the help of BINFMT_MISC.
+mutex-design.txt
+- 通用mutex子系统.
+- info on the generic mutex subsystem.
 namespaces/
-	- directory with various information about namespaces
+- 命名空间
+- directory with various information about namespaces
 netlabel/
-	- directory with information on the NetLabel subsystem.
+- NetLabel子系统
+- directory with information on the NetLabel subsystem.
 networking/
-	- directory with info on various aspects of networking with Linux.
+- Linux网络各方面信息.
+- directory with info on various aspects of networking with Linux.
 nfc/
-	- directory relating info about Near Field Communications support.
+- NFC（近场通信）支持
+- directory relating info about Near Field Communications support.
 nommu-mmap.txt
-	- documentation about no-mmu memory mapping support.
+- 无mmu内存映射支持.
+- documentation about no-mmu memory mapping support.
 numastat.txt
-	- info on how to read Numa policy hit/miss statistics in sysfs.
+- 如何读取sysfs中Numa策略的命中和缺失的统计信息.
+- info on how to read Numa policy hit/miss statistics in sysfs.
 oops-tracing.txt
-	- how to decode those nasty internal kernel error dump messages.
+- 如何解码内核dump的错误消息.
+- how to decode those nasty internal kernel error dump messages.
 padata.txt
-	- An introduction to the "padata" parallel execution API
+- "padata"并行执行API
+- An introduction to the "padata" parallel execution API
 parisc/
-	- directory with info on using Linux on PA-RISC architecture.
+- PA-RISC体系上的Linux
+- directory with info on using Linux on PA-RISC architecture.
 parport.txt
-	- how to use the parallel-port driver.
+- 如何使用并口驱动.
+- how to use the parallel-port driver.
 parport-lowlevel.txt
-	- description and usage of the low level parallel port functions.
+- 底层并口函数的描述和用法.
+- description and usage of the low level parallel port functions.
 pcmcia/
-	- info on the Linux PCMCIA driver.
+- Linux PCMCIA驱动.
+- info on the Linux PCMCIA driver.
 percpu-rw-semaphore.txt
-	- RCU based read-write semaphore optimized for locking for reading
-phy.txt
-	- Description of the generic PHY framework.
+- 用于读锁的基于RCU的读写信号优化
+- RCU based read-write semaphore optimized for locking for reading
 pi-futex.txt
-	- documentation on lightweight priority inheritance futexes.
+- 轻量级优先级继承futexes
+- documentation on lightweight priority inheritance futexes.
 pinctrl.txt
-	- info on pinctrl subsystem and the PINMUX/PINCONF and drivers
+- pinctrl子系统和PINMUX/PINCONF及驱动
+- info on pinctrl subsystem and the PINMUX/PINCONF and drivers
 pnp.txt
-	- Linux Plug and Play documentation.
+- Linux 即插即用文档
+- Linux Plug and Play documentation.
 power/
-	- directory with info on Linux PCI power management.
+- Linux PCI电源管理.
+- directory with info on Linux PCI power management.
 powerpc/
-	- directory with info on using Linux with the PowerPC.
+- PowerPC体系上的Linux.
+- directory with info on using Linux with the PowerPC.
 prctl/
-	- directory with info on the priveledge control subsystem
+- 特权控制子系统
+- directory with info on the priveledge control subsystem
 preempt-locking.txt
-	- info on locking under a preemptive kernel.
+- info on locking under a preemptive kernel.
 printk-formats.txt
-	- how to get printk format specifiers right
+- 如何正确地得到printk格式符
+- how to get printk format specifiers right
 pps/
-	- directory with information on the pulse-per-second support
+- pulse-per-second支持
+- directory with information on the pulse-per-second support
 ptp/
-	- directory with info on support for IEEE 1588 PTP clocks in Linux.
+- Linux中IEEE 1588 PTP clocks支持
+- directory with info on support for IEEE 1588 PTP clocks in Linux.
 pwm.txt
-	- info on the pulse width modulation driver subsystem
+- PWM驱动子系统
+- info on the pulse width modulation driver subsystem
 ramoops.txt
-	- documentation of the ramoops oops/panic logging module.
+- ramoops oops/panic日志模块
+- documentation of the ramoops oops/panic logging module.
 rapidio/
-	- directory with info on RapidIO packet-based fabric interconnect
+- RapidIO包交换互连
+- directory with info on RapidIO packet-based fabric interconnect
 rbtree.txt
-	- info on what red-black trees are and what they are for.
+- 红黑树及用处
+- info on what red-black trees are and what they are for.
 remoteproc.txt
-	- info on how to handle remote processor (e.g. AMP) offloads/usage.
+- 如何处理远程处理器(如AMP)offloads/usage.
+- info on how to handle remote processor (e.g. AMP) offloads/usage.
 rfkill.txt
-	- info on the radio frequency kill switch subsystem/support.
+- 无线频率kill switch 子系统支持
+- info on the radio frequency kill switch subsystem/support.
 robust-futex-ABI.txt
-	- documentation of the robust futex ABI.
+- 鲁棒futex ABI
+- documentation of the robust futex ABI.
 robust-futexes.txt
-	- a description of what robust futexes are.
+- 什么是鲁棒futex
+- a description of what robust futexes are.
 rpmsg.txt
-	- info on the Remote Processor Messaging (rpmsg) Framework
+- 远程处理器消息(rpmsg)框架
+- info on the Remote Processor Messaging (rpmsg) Framework
+rt-mutex-design.txt
+- description of the RealTime mutex implementation design.
+rt-mutex.txt
+- desc. of RT-mutex subsystem with PI (Priority Inheritance) support.
 rtc.txt
-	- notes on how to use the Real Time Clock (aka CMOS clock) driver.
+- 如何使用实时时钟驱动(即CMOS时钟).
+- notes on how to use the Real Time Clock (aka CMOS clock) driver.
 s390/
-	- directory with info on using Linux on the IBM S390.
+- 在IBM S390上使用Linux
+- directory with info on using Linux on the IBM S390.
 scheduler/
-	- directory with info on the scheduler.
+- 调度器
+- directory with info on the scheduler.
 scsi/
-	- directory with info on Linux scsi support.
+- Linux scsi支持
+- directory with info on Linux scsi support.
 security/
-	- directory that contains security-related info
+- 安全相关信息
+- directory that contains security-related info
 serial/
-	- directory with info on the low level serial API.
+- 底层串口API
+- directory with info on the low level serial API.
 serial-console.txt
-	- how to set up Linux with a serial line console as the default.
+- 如何设置串口终端为Linux默认。
+- how to set up Linux with a serial line console as the default.
 sgi-ioc4.txt
-	- description of the SGI IOC4 PCI (multi function) device.
+- SCI IOC4 PCI (multi function)设备
+- description of the SGI IOC4 PCI (multi function) device.
+sgi-visws.txt
+- SGI可视化工作站
+- short blurb on the SGI Visual Workstations.
 sh/
-	- directory with info on porting Linux to a new architecture.
+- 如何移植Linux到新体系结构上.
+- directory with info on porting Linux to a new architecture.
 smsc_ece1099.txt
-	-info on the smsc Keyboard Scan Expansion/GPIO Expansion device.
+- smsc Keyboard Scan Expansion/GPIO Expansion设备
+-info on the smsc Keyboard Scan Expansion/GPIO Expansion device.
 sound/
-	- directory with info on sound card support.
+- 声卡支持
+- directory with info on sound card support.
 sparse.txt
-	- info on how to obtain and use the sparse tool for typechecking.
+- 如何使用sparse工具进行类型检查
+- info on how to obtain and use the sparse tool for typechecking.
 spi/
-	- overview of Linux kernel Serial Peripheral Interface (SPI) support.
+- Linux SPI支持
+- overview of Linux kernel Serial Peripheral Interface (SPI) support.
+spinlocks.txt
+- 使用自旋锁来提供内核独占访问
+- info on using spinlocks to provide exclusive access in kernel.
 stable_api_nonsense.txt
-	- info on why the kernel does not have a stable in-kernel api or abi.
+- 关于为什么内核没有一个稳定的内核api或abi
+- info on why the kernel does not have a stable in-kernel api or abi.
 stable_kernel_rules.txt
-	- rules and procedures for the -stable kernel releases.
+- 稳定的内核发布的规则和过程
+- rules and procedures for the -stable kernel releases.
 static-keys.txt
-	- info on how static keys allow debug code in hotpaths via patching
+- 如何通过补丁的方式使用静态关键变量debug 代码
+- info on how static keys allow debug code in hotpaths via patching
 svga.txt
-	- short guide on selecting video modes at boot via VGA BIOS.
+- 启动时通过VGA BIOS选择视频模式简单指导
+- short guide on selecting video modes at boot via VGA BIOS.
 sysfs-rules.txt
-	- How not to use sysfs.
+- 如何不使用sysfs
+- How not to use sysfs.
 sysctl/
-	- directory with info on the /proc/sys/* files.
+- /proc/sys/*相关文件
+- directory with info on the /proc/sys/* files.
 sysrq.txt
-	- info on the magic SysRq key.
+- magic SysRq key
+- info on the magic SysRq key.
 target/
-	- directory with info on generating TCM v4 fabric .ko modules
-this_cpu_ops.txt
-	- List rationale behind and the way to use this_cpu operations.
+生成TCM v4 fabric .ko模块
+- directory with info on generating TCM v4 fabric .ko modules
 thermal/
-	- directory with information on managing thermal issues (CPU/temp)
+- 管理散热问题(CPU/temp)
+- directory with information on managing thermal issues (CPU/temp)
 trace/
-	- directory with info on tracing technologies within linux
+-Linux中的跟踪技术
+- directory with info on tracing technologies within linux
 unaligned-memory-access.txt
-	- info on how to avoid arch breaking unaligned memory access in code.
+- 如何避免代码中体系结构带来的非对齐内存访问
+- info on how to avoid arch breaking unaligned memory access in code.
 unicode.txt
-	- info on the Unicode character/font mapping used in Linux.
+- Linux中使用的Unicode字符/字体映射
+- info on the Unicode character/font mapping used in Linux.
 unshare.txt
-	- description of the Linux unshare system call.
+- Linux非共享系统调用
+- description of the Linux unshare system call.
 usb/
-	- directory with info regarding the Universal Serial Bus.
+- USB总线
+- directory with info regarding the Universal Serial Bus.
 vDSO/
-	- directory with info regarding virtual dynamic shared objects
+- 虚拟动态共享对象
+- directory with info regarding virtual dynamic shared objects
 vfio.txt
-	- info on Virtual Function I/O used in guest/hypervisor instances.
+- guest/hypervisor实例中的虚拟化I/O
+- info on Virtual Function I/O used in guest/hypervisor instances.
 vgaarbiter.txt
-	- info on enable/disable the legacy decoding on different VGA devices
+- 允许和禁止不同VGA设备legacy解码
+- info on enable/disable the legacy decoding on different VGA devices
 video-output.txt
-	- sysfs class driver interface to enable/disable a video output device.
+- 允许和禁止视频输出设备的sysfs class驱动接口
+- sysfs class driver interface to enable/disable a video output device.
 video4linux/
-	- directory with info regarding video/TV/radio cards and linux.
+- video/TV/radio卡和linux
+- directory with info regarding video/TV/radio cards and linux.
 virtual/
-	- directory with information on the various linux virtualizations.
+- 各种linux虚拟化
+- directory with information on the various linux virtualizations.
 vm/
-	- directory with info on the Linux vm code.
+- Linux vm代码.
+- directory with info on the Linux vm code.
 vme_api.txt
-	- file relating info on the VME bus API in linux
+- Linux中VME总线API信息
+- file relating info on the VME bus API in linux
 volatile-considered-harmful.txt
-	- Why the "volatile" type class should not be used
+- 为什么"volatile"类型不应使用
+- Why the "volatile" type class should not be used
 w1/
-	- directory with documents regarding the 1-wire (w1) subsystem.
+- 1-wire(w1)子系统
+- directory with documents regarding the 1-wire (w1) subsystem.
 watchdog/
-	- how to auto-reboot Linux if it has "fallen and can't get up". ;-)
+- 如何在Linux"失效并且无法运行"时自动重启Linux.;-)
+- how to auto-reboot Linux if it has "fallen and can't get up". ;-)
 wimax/
-	- directory with info about Intel Wireless Wimax Connections
+- Intel无线Wimax连接
+- directory with info about Intel Wireless Wimax Connections
 workqueue.txt
-	- information on the Concurrency Managed Workqueue implementation
+- 并发管理的工作队列实现.
+- information on the Concurrency Managed Workqueue implementation
 x86/x86_64/
-	- directory with info on Linux support for AMD x86-64 (Hammer) machines.
-xillybus.txt
-	- Overview and basic ui of xillybus driver
+- AMD x86-64 (Hammer)机器的Linux支持.
+- directory with info on Linux support for AMD x86-64 (Hammer) machines.
 xtensa/
-	- directory with documents relating to arch/xtensa port/implementation
+- arch/xtensa体系结构上的移植和实现
+- directory with documents relating to arch/xtensa port/implementation
 xz.txt
-	- how to make use of the XZ data compression within linux kernel
+- 如何在Linux内核中使用XZ数据压缩
+- how to make use of the XZ data compression within linux kernel
 zh_CN/
-	- directory with Chinese translations of various documents
+- 一些文档的中文翻译
+- directory with Chinese translations of various documents
 zorro.txt
-	- info on writing drivers for Zorro bus devices found on Amigas.
+- 编写Amigas Zorro总线设备驱动相关信息
+- info on writing drivers for Zorro bus devices found on Amigas. 
