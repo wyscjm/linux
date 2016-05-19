@@ -1,5 +1,5 @@
 ..
-├── 00-INDEX
+├── 00-INDEX    :ok
 ├── ABI
 │   ├── obsolete
 │   │   ├── proc-sys-vm-nr_pdflush_threads
